@@ -160,16 +160,27 @@ img {
   margin: 0 auto;
 }
 header {
-  width: 99%;
-  margin: 10px 10px;
+  background-color: #4917cd;
+  color: white;
+}
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-header nav {
-  width: 33%;
+.header-container h1 {
+  cursor: pointer;
+}
+.header-container nav {
+  width: 40%;
   display: flex;
+  flex-direction: flex-end;
   justify-content: space-evenly;
+  padding: 20px;
 }
-header nav a {
+.header-container nav a {
   text-decoration: none;
+  color: white;
 }
