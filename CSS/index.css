@@ -133,7 +133,8 @@ table {
   box-sizing: border-box;
 }
 html {
-  font-family: "Rubik", serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
 }
 h1 {
   font-size: 1.8rem;
@@ -157,7 +158,6 @@ img {
 header {
   background-color: #193441;
   color: white;
-  margin-bottom: 20px;
 }
 .header-container {
   max-width: 1000px;
@@ -184,18 +184,19 @@ header {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  background-color: #fdfdfd;
 }
 .cta {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 40px auto;
+  padding-top: 40px;
 }
 .cta img {
   width: 50%;
 }
 .cta .cta-text {
-  width: 42.5%;
+  width: 20.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -211,6 +212,7 @@ header {
   font-size: 1rem;
   margin-bottom: 5px;
   font-style: italic;
+  color: #657786;
 }
 .cta button {
   font-size: 1.3rem;
@@ -221,4 +223,65 @@ header {
   margin: 19px;
   border-radius: 5px;
   cursor: pointer;
+}
+.main-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.main-content p {
+  color: #657786;
+}
+.main-content .our-service {
+  margin-top: 60px;
+  text-align: center;
+}
+.main-content .our-service h2 {
+  margin-bottom: 15px;
+}
+.main-content .our-team {
+  margin: 30px auto;
+}
+.main-content .our-team h2 {
+  margin: 10px auto;
+  text-align: center;
+}
+.main-content .our-team h3 {
+  color: #657786;
+  text-align: center;
+}
+.main-content .person-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+.main-content .person-card {
+  display: flex;
+  margin: 10px 0;
+  width: 45%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(235, 238, 240, 0.452);
+}
+.main-content .person-card .name {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.main-content .person-card .position {
+  color: #657786;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+.main-content .person-card .bio {
+  color: #657786;
+}
+.main-content .person-card .left-side {
+  width: 100%;
+  margin: 0 auto;
+}
+.main-content .person-card .left-side img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
 }

@@ -2,19 +2,20 @@
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  background-color: #fdfdfd;
 }
 
 .cta {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 40px auto;
+  padding-top: 40px;
   img {
     width: 50%;
   }
 
   .cta-text {
-    width: 42.5%;
+    width: 20.5%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -30,6 +31,7 @@
     font-size: 1rem;
     margin-bottom: 5px;
     font-style: italic;
+    color: rgb(101, 119, 134);
   }
   button {
     font-size: 1.3rem;
@@ -40,5 +42,68 @@
     margin: 19px;
     border-radius: 5px;
     cursor: pointer;
+  }
+}
+
+.main-content {
+  width: 80%;
+  margin: 0 auto;
+  p {
+    color: rgb(101, 119, 134);
+  }
+  .our-service {
+    margin-top: 60px;
+    text-align: center;
+    h2 {
+      margin-bottom: 15px;
+    }
+  }
+  .our-team {
+    margin: 30px auto;
+    h2 {
+      margin: 10px auto;
+      text-align: center;
+    }
+
+    h3 {
+      color: rgb(101, 119, 134);
+      text-align: center;
+    }
+  }
+  .person-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .person-card {
+    display: flex;
+    margin: 10px 0;
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(235, 238, 240, 0.452);
+    .name {
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+    .position {
+      color: rgb(101, 119, 134);
+      font-style: italic;
+      padding-bottom: 5px;
+    }
+    .bio {
+      color: rgb(101, 119, 134);
+    }
+    .left-side {
+      width: 100%;
+      margin: 0 auto;
+      img {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+      }
+    }
   }
 }
