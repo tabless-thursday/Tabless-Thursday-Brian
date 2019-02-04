@@ -10,12 +10,23 @@
   justify-content: space-evenly;
   align-items: center;
   padding-top: 40px;
+
+  @media @phone {
+    flex-direction: column;
+    order: -1;
+  }
   img {
     width: 50%;
+    @media @phone {
+      width: 95%;
+    }
   }
 
   .cta-text {
     width: 20.5%;
+    @media @phone {
+      width: 95%;
+    }
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -71,6 +82,9 @@
     }
   }
   .person-container {
+    @media @phone {
+      width: 95%;
+    }
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -79,6 +93,9 @@
     padding-bottom: 20px;
   }
   .person-card {
+    @media @phone {
+      width: 95%;
+    }
     display: flex;
     height: 160px;
     margin: 20px 0;

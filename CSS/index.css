@@ -129,7 +129,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 html {
@@ -192,8 +193,19 @@ header {
   align-items: center;
   padding-top: 40px;
 }
+@media (max-width: 500px) {
+  .cta {
+    flex-direction: column;
+    order: -1;
+  }
+}
 .cta img {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .cta img {
+    width: 95%;
+  }
 }
 .cta .cta-text {
   width: 20.5%;
@@ -203,6 +215,11 @@ header {
   align-content: center;
   align-items: center;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .cta .cta-text {
+    width: 95%;
+  }
 }
 .cta h2 {
   font-size: 2.5rem;
@@ -257,6 +274,11 @@ header {
   margin-top: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .main-content .person-container {
+    width: 95%;
+  }
+}
 .main-content .person-card {
   display: flex;
   height: 160px;
@@ -266,6 +288,11 @@ header {
   border-radius: 5px;
   background-color: rgba(235, 238, 240, 0.452);
   border: 1px solid rgba(128, 128, 128, 0.397);
+}
+@media (max-width: 500px) {
+  .main-content .person-card {
+    width: 95%;
+  }
 }
 .main-content .person-card .name {
   font-weight: bold;
