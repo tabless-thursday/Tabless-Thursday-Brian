@@ -4,49 +4,39 @@ header {
   font-family: @Bitter;
   position: fixed;
   width: 100%;
-  margin-bottom: 80px;
 }
 .header-container {
-  // max-width: 1000px;
-  margin: 0 auto;
-  
   .center;
   h1 {
     cursor: pointer;
-    width: 33%;
+    width: 200px;
     font-size: 1.3rem;
     text-align: left;
-    padding-left: 2%;
-    @media @tablet {
-      width: 200px;
-    }
+    padding-left: 12px;
   }
   nav {
-    font-family: @Rubik;
-    width: 300px;
-    padding: 20px 2%;
     .center;
+    font-family: @Rubik;
+    width: 20px;
+    padding: 16px 12px;
     @media @tablet {
-      width: 20px;
+      width: 300px;
     }
     i {
-      display: none;
       cursor: pointer;
-      opacity: .9;
-      @media @tablet {
-        display: inline;
-      }
-    }
-    i:hover {
       opacity: 1;
-    }
-    
-    a {
-      text-decoration: none;
-      opacity: .9;
-      color: @off-white-light;
+
       @media @tablet {
         display: none;
+      }
+    }
+    a {
+      display: none;
+      text-decoration: none;
+      opacity: 0.9;
+      color: @off-white-light;
+      @media @tablet {
+        display: inline;
       }
     }
     a:hover {
