@@ -1,5 +1,7 @@
-h1 {
-  font-family: 'Rubik', sans-serif;
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -158,10 +160,13 @@ img {
 }
 header {
   background-color: #193441;
-  color: white;
+  color: #f7fbfb;
+  font-family: "Bitter", serif;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 80px;
 }
 .header-container {
-  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -169,29 +174,66 @@ header {
 }
 .header-container h1 {
   cursor: pointer;
+  width: 33%;
+  font-size: 1.3rem;
+  text-align: left;
+  padding-left: 2%;
+}
+@media (max-width: 800px) {
+  .header-container h1 {
+    width: 200px;
+  }
 }
 .header-container nav {
-  width: 40%;
+  font-family: "Rubik", sans-serif;
+  width: 300px;
+  padding: 20px 2%;
   display: flex;
-  flex-direction: flex-end;
-  justify-content: space-evenly;
-  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .header-container nav {
+    width: 20px;
+  }
+}
+.header-container nav i {
+  display: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+@media (max-width: 800px) {
+  .header-container nav i {
+    display: inline;
+  }
+}
+.header-container nav i:hover {
+  opacity: 1;
 }
 .header-container nav a {
   text-decoration: none;
-  color: white;
+  opacity: 0.9;
+  color: #f7fbfb;
+}
+@media (max-width: 800px) {
+  .header-container nav a {
+    display: none;
+  }
+}
+.header-container nav a:hover {
+  opacity: 1;
 }
 .main-container {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  background-color: #fdfdfd;
+  background-color: #f7fbfb;
 }
 .cta {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 90px;
 }
 @media (max-width: 500px) {
   .cta {
@@ -249,8 +291,18 @@ header {
   color: #657786;
 }
 .main-content .our-service {
+  display: flex;
   margin-top: 60px;
-  text-align: center;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.main-content .our-service .top-content {
+  width: 80%;
+}
+.main-content .our-service img {
+  width: 80%;
+  margin-bottom: 15px;
 }
 .main-content .our-service h2 {
   margin-bottom: 15px;
@@ -276,7 +328,8 @@ header {
 }
 @media (max-width: 500px) {
   .main-content .person-container {
-    width: 95%;
+    width: 100%;
+    margin-right: 0;
   }
 }
 .main-content .person-card {
