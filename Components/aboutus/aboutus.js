@@ -1,9 +1,7 @@
 class TeamMember {
   constructor(element) {
     this.element = element;
-    console.log(element);
     this.seeMoreButton = document.querySelector(".seeMoreButton");
-    console.log(this.seeMoreButton);
     this.seeMoreButton.addEventListener("click", () => this.seeMore());
   }
   seeMore() {
