@@ -1,4 +1,10 @@
-.main-container {
+html {
+  scroll-behavior: smooth;
+  background-color: @background;
+  .button-blue;
+}
+
+.main-content {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -8,8 +14,8 @@
 
 .cta {
   .center-even;
-  padding-top: 80px;
   flex-direction: column;
+  padding-top: 80px;
   @media @tablet {
     flex-direction: row;
   }
@@ -17,12 +23,14 @@
     width: 85%;
     order: -1;
     @media @tablet {
+      width: 75%;
+    }
+    @media @tablet {
       order: 1;
       width: 50%;
     }
     margin-bottom: 30px;
   }
-
   .cta-text {
     width: 85%;
     @media @tablet {
@@ -35,57 +43,48 @@
   h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
+    font-family: @Bitter;
   }
   h3 {
     font-style: italic;
-    color: @medium-blue;
-  }
-  button {
-    font-size: 1.3rem;
-    background: @medium-blue;
-    border: none;
-    color: @off-white-light;
-    padding: 10px 35px;
-    margin: 19px;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-bottom: 25px;
+    color: @text2;
   }
 }
-
-.main-content {
-  border-top: 1px solid @gray2;
+.main-container {
+  .border-top;
   width: 95%;
   margin: 0 auto;
-
-  .our-product {
+  .product {
     .center-even;
-    margin-top: 15px;
+    margin: 15px 0;
     flex-direction: column;
-    @media @tablet {
+    @media @desktop {
       flex-direction: row;
     }
     img {
       width: 85%;
-      @media @tablet {
+      @media @desktop {
         order: -1;
         width: 50%;
       }
     }
     h2 {
       margin-bottom: 15px;
+      color: @text;
+      font-family: @Bitter;
     }
     .top-content {
-      @media @tablet {
+      @media @desktop {
         width: 35%;
       }
     }
   }
-  .our-team {
-    border-top: 1px solid @gray2;
+  .team {
+    .border-top;
     margin-top: 20px;
     h2 {
-      margin: 20px 0 15px 0;
+      font-family: @Bitter;
+      margin: 15px 0 15px 0;
       @media @tablet {
         text-align: center;
       }
@@ -99,29 +98,37 @@
   }
   .person-container {
     .center-even;
+    justify-content: space-evenly;
     flex-flow: row wrap;
     margin-top: 5px;
     padding-bottom: 10px;
   }
   .person-card {
-    width: 300px;
+    width: 375px;
     display: flex;
-    height: 100px;
-    margin-top: 20px;
+    height: 105px;
+    margin: 20px 5px 0 5px;
     padding: 10px;
-    background-color: rgba(211, 211, 211, 0.137);
+    background-color: #1934410c;
     border-radius: 5px;
-    border: 1px solid #19344125;
-
+    border: 1px solid #1934416c;
+    @media @tablet {
+      width: 375px;
+    }
+    @media @desktop {
+      width: 235px;
+      height: 140px;
+    }
     .name {
       font-family: @Bitter;
       font-weight: bold;
       padding-bottom: 5px;
     }
+    .bio {
+      color: @text;
+      margin-bottom: 5px;
+    }
     .position {
-      .bio {
-        color: @text;
-      }
       color: rgb(101, 119, 134);
       font-weight: none;
       font-style: italic;
@@ -136,49 +143,12 @@
       }
     }
   }
-}
-
-footer {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #193441;
-  color: @off-white;
-  flex-direction: column;
-
-  .copy {
-    font-family: @Bitter;
-  }
-  .footer-content {
-    display: flex;
-    padding: 20px 0;
-    width: 100%;
-    justify-content: space-evenly;
-  }
-  h2 {
-    padding: 10px;
-  }
-  p {
-    text-align: center;
-    font-size: 1rem;
-  }
-  address {
-    margin-right: 40px;
-    padding-left: 10px;
-  }
-  form {
-    input {
-      margin-top: 5px;
-      border-radius: 5px;
-      border: none;
-      font-size: 1.2rem;
+  .user-ticker {
+    h2 {
+      font-family: @Bitter;
     }
-  }
-  button {
-    background: @off-white-light;
-    border: none;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    margin: 5px 0;
+    .border-top;
+    margin-top: 15px;
+    padding: 15px 0;
   }
 }

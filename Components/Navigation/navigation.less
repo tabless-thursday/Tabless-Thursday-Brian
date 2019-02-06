@@ -16,17 +16,15 @@ header {
   }
   nav {
     .center;
-    font-family: @Rubik;
     width: 20px;
     padding: 16px 12px;
-    @media @tablet {
+    @media @desktop {
       width: 300px;
     }
     i {
       cursor: pointer;
-      opacity: 1;
-
-      @media @tablet {
+      opacity: 0.9;
+      @media @desktop {
         display: none;
       }
     }
@@ -35,9 +33,12 @@ header {
       text-decoration: none;
       opacity: 0.9;
       color: @off-white-light;
-      @media @tablet {
+      @media @desktop {
         display: inline;
       }
+    }
+    i:hover {
+      opacity: 1;
     }
     a:hover {
       opacity: 1;
