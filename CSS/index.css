@@ -213,7 +213,7 @@ header {
 }
 @media (min-width: 800px) {
   .header-container nav {
-    width: 300px;
+    width: 230px;
   }
 }
 .header-container nav i {
@@ -303,6 +303,13 @@ footer .copyright {
   margin-top: 15px;
   text-align: center;
 }
+footer i {
+  margin-top: 6px;
+  color: white;
+}
+footer i:active {
+  color: white;
+}
 html {
   scroll-behavior: smooth;
   background-color: #e4eeef;
@@ -352,13 +359,8 @@ html input:focus {
 }
 @media (min-width: 500px) {
   .cta img {
-    width: 75%;
-  }
-}
-@media (min-width: 500px) {
-  .cta img {
     order: 1;
-    width: 50%;
+    width: 40%;
   }
 }
 .cta .cta-text {
@@ -388,7 +390,8 @@ html input:focus {
   width: 95%;
   margin: 0 auto;
 }
-.main-container .product {
+.main-container .product,
+.main-container .product2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -396,49 +399,89 @@ html input:focus {
   flex-direction: column;
 }
 @media (min-width: 800px) {
-  .main-container .product {
+  .main-container .product,
+  .main-container .product2 {
     flex-direction: row;
   }
 }
-.main-container .product img {
+.main-container .product img,
+.main-container .product2 img {
   width: 85%;
+  background-color: #19344169;
+  padding: 10px;
+  border-radius: 5px;
 }
 @media (min-width: 800px) {
-  .main-container .product img {
+  .main-container .product img,
+  .main-container .product2 img {
     order: -1;
-    width: 50%;
+    width: 40%;
   }
 }
-.main-container .product h2 {
+.main-container .product h2,
+.main-container .product2 h2 {
   margin-bottom: 15px;
   color: #151131;
   font-family: "Bitter", serif;
 }
 @media (min-width: 800px) {
-  .main-container .product .top-content {
+  .main-container .product .top-content,
+  .main-container .product2 .top-content,
+  .main-container .product .top-content2,
+  .main-container .product2 .top-content2 {
     width: 35%;
   }
 }
-.main-container .team {
-  border-top: 1px solid #d1dbbd;
-  margin-top: 20px;
+.main-container .product2 {
+  margin-top: 30px;
 }
-.main-container .team h2 {
+@media (min-width: 800px) {
+  .main-container .product2 img {
+    order: 1;
+    width: 40%;
+  }
+}
+.main-container .product2 p {
+  margin-bottom: 15px;
+}
+.user-ticker {
+  border-top: 1px solid #d1dbbd;
+  max-width: 95%;
+  margin-top: 15px;
+  padding: 15px 0;
+}
+.user-ticker h2 {
+  font-family: "Bitter", serif;
+}
+.team {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f7fbfb;
+  color: #151131;
+  border-top: 1px solid #d1dbbd;
+  padding-top: 50px;
+}
+.team h2 {
   font-family: "Bitter", serif;
   margin: 15px 0 15px 0;
 }
 @media (min-width: 500px) {
-  .main-container .team h2 {
+  .team h2 {
     text-align: center;
   }
 }
-.main-container .team h3 {
+.team h3 {
   text-align: center;
 }
-.main-container .team p {
+.team p {
   margin-bottom: 10px;
 }
-.main-container .person-container {
+.team .team-text {
+  text-align: center;
+  flex-direction: column;
+}
+.person-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -446,7 +489,7 @@ html input:focus {
   margin-top: 5px;
   padding-bottom: 10px;
 }
-.main-container .person-card {
+.person-card {
   width: 375px;
   display: flex;
   height: 105px;
@@ -457,44 +500,36 @@ html input:focus {
   border: 1px solid #1934416c;
 }
 @media (min-width: 500px) {
-  .main-container .person-card {
+  .person-card {
     width: 375px;
   }
 }
 @media (min-width: 800px) {
-  .main-container .person-card {
+  .person-card {
     width: 235px;
     height: 140px;
   }
 }
-.main-container .person-card .name {
+.person-card .name {
   font-family: "Bitter", serif;
   font-weight: bold;
   padding-bottom: 5px;
 }
-.main-container .person-card .bio {
+.person-card .bio {
   color: #151131;
   margin-bottom: 5px;
 }
-.main-container .person-card .position {
+.person-card .position {
   color: #657786;
   font-weight: none;
   font-style: italic;
   padding-bottom: 5px;
 }
-.main-container .person-card .left-side {
+.person-card .left-side {
   width: 240px;
   margin: 0 auto;
   margin-right: 10px;
 }
-.main-container .person-card .left-side img {
+.person-card .left-side img {
   border-radius: 50%;
-}
-.main-container .user-ticker {
-  border-top: 1px solid #d1dbbd;
-  margin-top: 15px;
-  padding: 15px 0;
-}
-.main-container .user-ticker h2 {
-  font-family: "Bitter", serif;
 }

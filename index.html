@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,10 +28,9 @@
       <div class="header-container">
         <h1>Tabless Thursday</h1>
         <nav>
-          <a href="">Home</a>
-          <a href="">Product</a>
-          <a href="">Team</a>
-          <a href="">Contact</a>
+          <a href="#">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="#contact">Contact</a>
           <i id="nav-show" class="fas fa-bars fa-lg"></i>
         </nav>
       </div>
@@ -52,7 +51,7 @@
       </section>
 
       <!-- Product -->
-      <section class="main-container">
+      <section class="main-container" id="product">
         <section class="product">
           <div class="top-content">
             <h2>Product</h2>
@@ -66,127 +65,30 @@
           </div>
           <img src="assets/imgs/undraw_tabs_jf82.svg" alt="" />
         </section>
-
-        <!-- Team -->
-        <section class="team">
-          <div class="team-text">
-            <h2>Team</h2>
-            <h3>
-              Mauris aliquet lacinia diam, at hendrerit gue tempor eu. Nunc
-              dapibus velit id tellus congue ultricies. Integer sit amet pretium
-              est.
-            </h3>
+        <section class="product2">
+          <div class="top-content2">
+            <p>
+              We provide... Donec a dolor fringilla, efficitur tellus tristique,
+              egestas sapien. Maecenas neque sem, molestie id dapibus non,
+              cursus et ex. Integer libero ante, sodales sit amet massa sed,
+              venenatis pulvinar nisl. Libero ante, sodales sit. Libero ante,
+              sodales sit. Libero ante, sodales sit.
+            </p>
           </div>
-            <div class="person-container">
-                <div class="person-card">
-                    <div class="left-side">
-                        <img src="./assets/imgs/IMG_3274.jpg" alt="" />
-                    </div>
-                    <div class="right-side">
-                        <div class="name">Andrew Ghobrial</div>
-                        <div class="position">Scrum Master</div>
-                        <div class="bio">
-                            Sed tortor metus, aliquet at libero a, tempus euismod est.
-                            Class aptent taciti sociosqu ad litora torquent per.
-                        </div>
-                    </div>
-                </div>
-                         <div class="person-card">
-                <div class="left-side">
-                  <img src="./assets/imgs/IMG_3274.jpg" alt="" />
-                </div>
-                <div class="right-side">
-                  <div class="name">Jarrad Miller</div>
-                  <div class="position">Back End Architect</div>
-                  <div class="bio">
-                    Sed tortor metus, aliquet at libero a, tempus euismod est.
-                    Class aptent taciti sociosqu ad litora torquent per.
-                  </div>
-                </div>
-              </div>
-
-              <div class="person-card">
-                <div class="left-side">
-                  <img src="./assets/imgs/IMG_3274.jpg" alt="" />
-                </div>
-                <div class="right-side">
-                  <div class="name">Orlando Lopez</div>
-                  <div class="position">Front End Architect 1</div>
-                  <div class="bio">
-                    Sed tortor metus, aliquet at libero a, tempus euismod est.
-                    Class aptent taciti sociosqu ad litora torquent per.
-                  </div>
-                </div>
-              </div>
-
-              <div class="person-card">
-                <div class="left-side">
-                  <img src="./assets/imgs/IMG_3274.jpg" alt="" />
-                </div>
-                <div class="right-side">
-                  <div class="name">Randy Wilson</div>
-                  <div class="position">Front End Architect 2</div>
-                  <div class="bio">
-                    Sed tortor metus, aliquet at libero a, tempus euismod est.
-                    Class aptent taciti sociosqu ad litora torquent per.
-                  </div>
-                </div>
-              </div>
-
-              <div class="person-card">
-                <div class="left-side">
-                  <img src="./assets/imgs/IMG_3274.jpg" alt="" />
-                </div>
-                <div class="right-side">
-                  <div class="name">Rory Hennessey</div>
-                  <div class="position">UI Developer 1</div>
-                  <div class="bio">
-                    Sed tortor metus, aliquet at libero a, tempus euismod est.
-                    Class aptent taciti sociosqu ad litora torquent per.
-                  </div>
-                </div>
-              </div>
-
-              <div class="person-card">
-                <div class="left-side">
-                  <img src="./assets/imgs/IMG_3274.jpg" alt="" />
-                </div>
-                <div class="right-side">
-                  <div class="name">Brian Illes</div>
-                  <div class="position">UI Developer 2</div>
-                  <div class="bio">
-                    Sed tortor metus, aliquet at libero a, tempus euismod est.
-                    Class aptent taciti sociosqu ad litora torquent per.
-                  </div>
-                </div>
-              </div>
-
-              <div class="person-card">
-                <div class="left-side">
-                  <img src="./assets/imgs/IMG_3274.jpg" alt="" />
-                </div>
-                <div class="right-side">
-                  <div class="name">Adam Mathieson</div>
-                  <div class="position">UI Developer 3</div>
-                  <div class="bio">
-                    Sed tortor metus, aliquet at libero a, tempus euismod est.
-                    Class aptent taciti sociosqu ad litora torquent per.
-                  </div>
-                </div>
-              </div>
+          <img id="reg-order" src="assets/imgs/tab-list.svg" alt="" />
         </section>
 
         <!-- User Ticker -->
         <section class="user-ticker">
           <!-- insert ticker that queries the database and gets the current number of accounts/users-->
-          <h2>Users:</h2>
+          <h2>User count:</h2>
         </section>
       </section>
     </div>
 
     <!-- Footer / Contact-->
     <footer>
-      <div class="footer-content">
+      <div class="footer-content" id="contact">
         <div class="email">
           <form action="">
             Get Updates:
@@ -199,18 +101,22 @@
           <h2>Tabless Thursday</h2>
           <address>
             <span>Address</span>
-            <br />Tabless Thursday <br />United States<br />
+            <br />1 Tabless Road <br />
+            California <br />United States<br />
             5238
           </address>
           <div class="contact">
             <span>Contact</span>
             <br />
-            support@tablessthursday.com<br />githubrepo
+            support@tablessthursday.com<br />
+            <a href="https://github.com/tabless-thursday"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
           </div>
         </div>
 
         <div class="copyright">
-          <p>Tabless Thursday &copy;2019</p>
+          <p>Tabless Thursday&copy;2019</p>
         </div>
       </div>
     </footer>
