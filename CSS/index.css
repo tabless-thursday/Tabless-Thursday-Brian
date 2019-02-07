@@ -198,7 +198,6 @@ header {
   align-items: center;
 }
 .header-container h1 {
-  cursor: pointer;
   width: 200px;
   font-size: 1.3rem;
   text-align: left;
@@ -447,6 +446,8 @@ html input:focus {
 }
 .main-container .product2 {
   margin-top: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
 }
 @media (min-width: 800px) {
   .main-container .product2 img {
@@ -455,26 +456,26 @@ html input:focus {
   }
 }
 .main-container .product2 p {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 .user-ticker {
   border-top: 1px solid #d1dbbd;
   max-width: 95%;
   margin-top: 15px;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 .user-ticker h2 {
   font-family: "Bitter", serif;
 }
 .team {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   background-color: #f7fbfb;
   color: #151131;
   line-height: 1.2;
-  border-top: 1px solid #d1dbbd;
   padding-top: 50px;
+  height: 100%;
 }
 .team h2 {
   font-family: "Bitter", serif;
@@ -494,7 +495,7 @@ html input:focus {
   align-items: center;
   justify-content: space-evenly;
   flex-flow: row wrap;
-  margin-top: 5px;
+  margin-top: 15px;
   padding-bottom: 25px;
 }
 .person-card {
@@ -536,7 +537,7 @@ html input:focus {
 .seeMoreButton {
   width: 72%;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .all-team {
   display: inline;
