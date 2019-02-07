@@ -11,5 +11,4 @@ class TeamMember {
 }
 
 const persons = document.querySelectorAll(".person-card");
-console.log(persons);
 persons.forEach(person => new TeamMember(person));

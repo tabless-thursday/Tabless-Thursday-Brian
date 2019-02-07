@@ -1,9 +1,10 @@
+//Mobile menu
 const toggleMenu = () => {
-  menu.classList.toggle("menu-active");
+  headerContainer.classList.toggle("menu-active");
 };
 
-const menu = document.querySelector(".menu");
+const headerContainer = document.querySelector(".header-container");
 
-const menuBtn = document.querySelector("nav i");
+const menuBtn = document.querySelector(".fa-bars");
 
 menuBtn.addEventListener("click", () => toggleMenu());
