@@ -241,14 +241,19 @@ header {
 .header-container nav a:hover {
   opacity: 1;
 }
-.menu {
+.menu-active {
   z-index: 2;
 }
-.menu nav {
-  width: 230px;
+.menu-active nav {
+  width: 100px;
+  height: 100px;
+  flex-direction: column;
 }
-.menu a {
-  display: inline;
+.menu-active nav a {
+  display: block;
+}
+.menu-active nav i {
+  order: -1;
 }
 i:hover {
   transform: scale(1.3);

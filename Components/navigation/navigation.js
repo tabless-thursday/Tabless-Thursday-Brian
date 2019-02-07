@@ -1,11 +1,9 @@
-// const toggleMenu = () => {
-//   menu.classList.toggle("menu");
-// };
+const toggleMenu = () => {
+  menu.classList.toggle("menu-active");
+};
 
-// const menu = document.querySelector("nav");
+const menu = document.querySelector(".menu");
 
-// const menuBtn = document.querySelector("nav i");
+const menuBtn = document.querySelector("nav i");
 
-// menuBtn.addEventListener("click", () => toggleMenu());
-
-
+menuBtn.addEventListener("click", () => toggleMenu());

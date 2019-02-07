@@ -45,13 +45,18 @@ header {
   }
 }
 
-.menu {
+.menu-active {
   z-index: 2;
   nav {
-    width: 230px;
-  }
-  a {
-    display: inline;
+    width: 100px;
+    height: 100px;
+    flex-direction: column;
+    a {
+      display: block;
+    }
+    i {
+      order: -1;
+    }
   }
 }
 
