@@ -1,0 +1,75 @@
+.team {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: @off-white-light;
+  color: @text;
+  line-height: 1.2;
+  padding-top: 50px;
+  height: 100%;
+  h2 {
+    font-family: @Bitter;
+    margin: 15px 0 15px 0;
+    @media @tablet {
+      text-align: center;
+    }
+  }
+  .team-text {
+    text-align: center;
+    margin: 5px;
+  }
+}
+
+.person-container {
+  .center-even;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  margin-top: 15px;
+  padding-bottom: 25px;
+}
+.person-card {
+  width: 265px;
+  display: flex;
+  height: 80px;
+  margin: 20px 5px 0 5px;
+  padding: 10px;
+  background-color: #1934410c;
+  border-radius: 5px;
+  border: 1px solid #1934416c;
+
+  .name {
+    font-family: @Bitter;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  .position {
+    color: rgb(101, 119, 134);
+    font-weight: none;
+    font-style: italic;
+    padding-bottom: 5px;
+  }
+  .left-side {
+    width: 110px;
+    margin-right: 10px;
+    img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .right-side {
+    width: 70%;
+  }
+}
+.hidden {
+  display: none;
+}
+.seeMoreButton {
+  width: 72%;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.all-team {
+  display: inline;
+}

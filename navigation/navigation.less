@@ -1,0 +1,79 @@
+header {
+  background-color: @dark-blue;
+  color: @off-white-light;
+  font-family: @Bitter;
+  position: fixed;
+  width: 100%;
+}
+.header-container {
+  .center;
+  h1 {
+    width: 200px;
+    font-size: 1.3rem;
+    text-align: left;
+    padding-left: 12px;
+  }
+  nav {
+    .center;
+    width: 20px;
+    padding: 16px 12px;
+    @media @desktop {
+      width: 230px;
+    }
+    i {
+      cursor: pointer;
+      opacity: 0.9;
+      @media @desktop {
+        display: none;
+      }
+    }
+    a {
+      display: none;
+      text-decoration: none;
+      opacity: 0.9;
+      color: @off-white-light;
+      @media @desktop {
+        display: inline;
+      }
+    }
+    i:hover {
+      opacity: 1;
+    }
+    a:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.menu-active {
+  width: 100%;
+  h1 {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    text-align: end;
+    a {
+      display: block;
+      font-size: 1.1rem;
+      margin: 15px auto;
+    }
+    i {
+      order: -1;
+      margin: 15px auto;
+    }
+  }
+}
+
+i:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+nav {
+  a:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+  }
+}
