@@ -413,9 +413,24 @@ html input:focus {
   margin-bottom: 15px;
   font-family: "Bitter", serif;
 }
-.cta h3 {
+.cta h3,
+.cta p {
   font-style: italic;
   color: #657786;
+  padding: 10px 0;
+}
+.cta p {
+  color: #151131;
+  font-size: 0.7rem;
+}
+.cta button {
+  margin-bottom: 0;
+}
+.cta .btn-two {
+  font-size: 1rem;
+  margin: 0;
+  padding: 10px 12.5px;
+  margin-bottom: 20px;
 }
 .main-container {
   border-top: 1px solid #d1dbbd;
